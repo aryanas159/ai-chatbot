@@ -65,10 +65,11 @@ main {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	column-gap: 30px;
+	/* column-gap: 30px; */
 	padding: 20px;
 	line-height: 25px;
 }
+
 .user:last-child {
 	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
 	both;
@@ -106,7 +107,7 @@ main {
 
 @media screen and (max-width: 700px) {
 	main {
-		padding: 20px;
+		padding: 10px;
 		width: 100%;
 		padding-bottom: 200px;
 	}
@@ -124,9 +125,14 @@ main {
 		border: 2px black solid;
 		outline: none;
 	}
-
+	.message {
+		padding: 10px;
+	}
+	.message div {
+		column-gap: 15px;
+	}
 	.message img {
-		width: 20px;
+		width: 25px;
 	}
 } 
 /* ----------------------------------------------
