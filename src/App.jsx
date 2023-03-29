@@ -27,7 +27,7 @@ function App() {
 		}, 1000);
 		openai
 			.createChatCompletion({
-				model: "gpt-3.5-turbo",
+				model: "gpt-4", //gpt-4 // gpt-3.5-turbo
 				messages: messages,
 			})
 			.then((res) => {
